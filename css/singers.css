@@ -1,0 +1,104 @@
+.singersInfoList{
+  display: flex;
+  flex-direction: column;
+  color:#aad400;
+}
+.singerInfoRight{
+  display: flex;
+  justify-content: space-between;
+  width:60%;
+  align-items: center;
+  margin: 2% 10%;
+  align-self:flex-start;
+}
+.singerInfoLeft{
+  display: flex;
+  justify-content: space-between;
+  width:60%;
+  align-items: center;
+  margin: 2% 10%;
+  align-self:flex-end;
+  background-color: #333;
+}
+.singerImg{
+  width:40%;
+  background-image: url(../image/69.jpg);
+  background-size: cover;
+  border-radius:100%;
+  border: 2px solid white;
+}
+.singerImg1{
+  width:40%;
+  background-image: url(../image/kendrick.jpg);
+  background-size: cover;
+  border-radius:100%;
+  border: 2px solid white;
+}
+.singerImg2{
+  width:40%;
+  background-image: url(../image/ski.jpg);
+  background-size: cover;
+  border-radius:100%;
+  border: 2px solid white;
+}
+.singerImg3{
+  width:40%;
+  background-image: url(../image/rocky.jpg);
+  background-size: cover;
+  border-radius:100%;
+  border: 2px solid white;
+}
+.singerImg4{
+  width:40%;
+  background-image: url(../image/cole.jpg);
+  background-size: cover;
+  border-radius:100%;
+  border: 2px solid white;
+}
+.singerImg5{
+  width:40%;
+  background-image: url(../image/denzel.png);
+  background-size: cover;
+  border-radius:100%;
+  border: 2px solid white;
+}
+.singer{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.album{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.vr{
+  border: 2px #fff solid;
+  border-radius:100%;
+}
+.singersInfoList hr{
+  width: 80%;
+  border: 2px #aad400 solid;
+  border-radius:100%;
+  align-self: center;
+}
+.singersInfoList a{
+  text-decoration: none;
+  color:#aad400;
+  padding: 2% 4%;
+  border:2px #aad400 solid;
+  cursor: pointer;
+  display: block;
+  margin-top: 4%;
+}
+p{
+  text-align: center;
+  font-size: 1.1vw;
+}
+h2{
+  font-size: 2vw;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/515a7e2a20.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/albums.css">
+  <link rel="stylesheet" href="css/album.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="image/favicon-16x16.png" sizes="16x16" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Day69:Graduation Day</title>
+</head>
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="list"></div>
+    </div>
+    <nav class="menu">
+      <ul class="headMenu">
+        <a href="index.html"><li>Home</li></a>
+        <a href="singers.html"><li>Singers</li></a>
+        <a href="albums.html"><li>Albums</li></a>
+        <a onclick="document.getElementById('loginForm').style.display='block'" style="width:auto;"><li>Login</li></a>
+      </ul>
+    </nav>
+    <div class="logo"></div>
+    <div class="secondLogo"></div>
+  </header>
+  <hr color="#aad400" width="100%">
+  <main>
+    <h1>Day69:Graduation Day</h1>
+      <div class="AlbumBox">
+          <div class="albumImg1"></div>
+          <div class="vr2"></div>
+          <div class="albumInfos">6ix9ine became widely known in late 2017 after the release of his debut single, "Gummo", which was a sleeper hit. He subsequently released the mixtape Day69 (2018), which was supported by the singles "Kooda", "Keke", and "Gotti", all of which charted on the Billboard Hot 100. "Fefe", featuring Nicki Minaj and Murda Beatz.</div>
+      </div>
+    <hr class="hr">
+    <h1>Tracks</h1>
+    <h2>Top Tracks</h2>
+      <div class="centered">
+        <div class="column">
+          <div class="trackCtn">
+            <div class="sixnine1">
+              <div class="trackImg1"></div>
+              <div class="btnBackground">
+              <div class="songStart"  onclick="StartOrStop('music/gooba.ogg')">
+                <audio  id="myAudio"></audio>
+              </div>
+              <div class="songStop" onclick="StartOrStop('')">
+              </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="songName">GOOBA</h2>
+        </div>
+      </div>
+      <div class="spaced">
+        <div class="column">
+          <div class="trackCtn">
+            <div class="sixnine2">
+              <div class="trackImg2"></div>
+              <div class="btnBackground">
+              <div class="songStart2"  onclick="StartOrStop('music/buba.ogg')">
+                <audio  id="myAudio"></audio>
+              </div>
+              <div class="songStop2" onclick="StartOrStop('')">
+              </div>
+              </div>
+            </div>
+          </div>
+          <h2>BUBA</h2>
+        </div>
+        <div class="column">
+          <div class="trackCtn">
+            <div class="sixnine3">
+              <div class="trackImg3"></div>
+              <div class="btnBackground">
+              <div class="songStart3"  onclick="StartOrStop('music/trollz.mp3')">
+                <audio  id="myAudio"></audio>
+              </div>
+              <div class="songStop3" onclick="StartOrStop('')">
+              </div>
+              </div>
+            </div>
+          </div>
+          <h2>TROLLZ</h2>
+        </div>
+      </div>
+    <h2>All tracks</h2>
+    <div class="tracksList">
+      <div class="track">
+        <h3>Doowee</h3>
+        <p>2:13</p>
+      </div>
+      <div class="track">
+        <h3>Gummo(Remix)</h3>
+        <p>3:25</p>
+      </div>
+      <div class="track">
+        <h3>Gummo</h3>
+        <p>2:37</p>
+      </div>
+      <div class="track">
+        <h3>Billy</h3>
+        <p>1:52</p>
+      </div>
+      <div class="track">
+        <h3>Chocolate</h3>
+        <p>3:02</p>
+      </div>
+      <div class="track">
+        <h3>Kooda</h3>
+        <p>2:22</p>
+      </div>
+      <div class="track">
+        <h3>Rondo</h3>
+        <p>2:18</p>
+      </div>
+      <div class="track">
+        <h3>Buba</h3>
+        <p>1:58</p>
+      </div>
+      <div class="track">
+        <h3>Gotti</h3>
+        <p>2:46</p>
+      </div>
+      <div class="track">
+        <h3>Mooky</h3>
+        <p>2:31</p>
+      </div>
+      <div class="track">
+        <h3>Keke</h3>
+        <p>2:28</p>
+      </div>
+    </div>
+  </main>
+  <hr color="#aad400" width="100%">
+  <footer>
+    <div class="team">
+      <h2><i class="fas fa-phone-alt"></i></h2>
+      <p>0888258547</p>
+    </div>
+    <div class="team">
+        <p>BM's team:</p>
+        <p>Hristian Kocev</p>
+        <p>Veselin Dokovski</p>
+        <p>Georgi Mucinski</p>
+        <p>Qvor Kamenov</p>
+    </div>
+    <div class="team">
+      <h2><i class="fas fa-envelope"></i></h2>
+      <p>bm123@abv.bg</p>
+    </div>
+    <audio  id="myAudio"></audio>
+  </footer>
+
+  <div id="loginForm" class="modal">
+    <form class="form animate">
+      <h2><i class="fas fa-arrow-circle-right"></i> Log in here</h2>
+      <div class="closeForm" onclick="CloseForm()">&times;</div>
+      <div class="user">
+        <input type="text" placeholder="  &#xf406;   Enter Username" name="username" required>
+        <input type="password" placeholder="  &#xf084;   Enter Password"  name="password" required>
+      </div>
+      <center><label>
+        <input type="checkbox" checked="checked" name="remember"> Keep me logged in
+      </label></center>
+      <div class="btns">
+        <button type="button" onclick="Cancel()" class="cancelbtn">Cancel</button>
+        <button type="submit">Log In <i class="fas fa-arrow-circle-right"></i></button>
+      </div>
+        <div class="passwordReset">Forgot <a href="#">password</a>?</span>
+    </form>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/515a7e2a20.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/singers.css">
+  <link rel="icon" type="image/png" href="image/favicon-16x16.png" sizes="16x16" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <title>Singers</title>
+</head>
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="list"></div>
+    </div>
+    <nav class="menu">
+      <ul class="headMenu">
+        <a href="index.html"><li>Home</li></a>
+        <a href="singers.html"><li>Singers</li></a>
+        <a href="albums.html"><li>Albums</li></a>
+        <a onclick="document.getElementById('loginForm').style.display='block'" style="width:auto;"><li>Login</li></a>
+      </ul>
+    </nav>
+    <div class="logo"></div>
+    <div class="secondLogo"></div>
+  </header>
+  <hr color="#aad400" width="100%">
+  <main>
+    <div class="singersInfoList">
+      <div class="singerInfoRight">
+        <div class="singer">
+          <div class="singerImg"></div>
+          <h2>6ix9ine</h2>
+        </div>
+        <div class="vr"></div>
+        <div class="album">
+          <p>6ix9ine is an American rapper. He has difficulties staying out of prison and his latest song is TROLLZ</p>
+          <h2>Day 69:Graduation Day</h2>
+          <a class="albumsBtn" href="6ix9ine.html">Check the album</a>
+        </div>
+      </div>
+      <hr></hr>
+      <div class="singerInfoLeft">
+        <div class="singer">
+          <div class="singerImg1"></div>
+          <h2>Kendrick Lamar</h2>
+        </div>
+        <div class="vr"></div>
+        <div class="album">
+          <p>Kendrick Lamar is an American rapper, songwriter, and record producer. He is widely regarded as one of the most influential artists of his generation and one of the greatest rappers of all time.</p>
+          <h2>To Pimp A Butterfly</h2>
+          <a class="albumsBtn" href="">Check the album</a>
+        </div>
+      </div>
+      <hr></hr>
+      <div class="singerInfoRight">
+        <div class="singer">
+          <div class="singerImg2"></div>
+          <h2>Ski Mask The Slump God</h2>
+        </div>
+        <div class="vr"></div>
+        <div class="album">
+          <p>He originally collaborated with fellow American rapper XXXTentacion and their collective Members Only, and in 2017 released his songs "Catch Me Outside" and "Babywipe", which are both featured on his mixtape YouWillRegret and certified Gold by the RIAA.</p>
+          <h2>STOKELEY</h2>
+          <a class="albumsBtn" href="">Check the album</a>
+        </div>
+      </div>
+      <hr></hr>
+      <div class="singerInfoLeft">
+        <div class="singer">
+          <div class="singerImg3"></div>
+          <h2>A$AP Rocky</h2>
+        </div>
+        <div class="vr"></div>
+        <div class="album">
+          <p>A$AP Rocky is an American rapper, singer, songwriter, record producer, model, actor, and music video director. He is a member of the hip hop collective A$AP Mob, from which he adopted his moniker.</p>
+          <h2>TESTING</h2>
+          <a class="albumsBtn" href="">Check the album</a>
+        </div>
+      </div>
+      <hr></hr>
+      <div class="singerInfoRight">
+        <div class="singer">
+          <div class="singerImg4"></div>
+          <h2>J. Cole</h2>
+        </div>
+        <div class="vr"></div>
+        <div class="album">
+          <p>J. Cole is an American rapper, singer, songwriter, producer, and record executive. Born on a military base in Germany. Cole initially gained recognition as a rapper following the release of his debut mixtape, The Come Up, in early 2007.</p>
+          <h2>KOD</h2>
+          <a class="albumsBtn" href="">Check the album</a>
+        </div>
+      </div>
+      <hr></hr>
+      <div class="singerInfoLeft">
+        <div class="singer">
+          <div class="singerImg5"></div>
+          <h2>Denzel Curry</h2>
+        </div>
+        <div class="vr"></div>
+        <div class="album">
+          <p>Denzel Curry is an American rapper, singer, and composer. Curry started rapping while in sixth grade and began working on his first mixtape in 2011, when he was attending school. </p>
+          <h2>TA13OO</h2>
+          <a class="albumsBtn" href="">Check the album</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <hr color="#aad400" width="100%">
+  <footer>
+    <div class="team">
+      <h2><i class="fas fa-phone-alt"></i></h2>
+      <p>0888258547</p>
+    </div>
+    <div class="team">
+        <p>BM's team:</p>
+        <p>Hristian Kocev</p>
+        <p>Veselin Dokovski</p>
+        <p>Georgi Mucinski</p>
+        <p>Qvor Kamenov</p>
+    </div>
+    <div class="team">
+      <h2><i class="fas fa-envelope"></i></h2>
+      <p>bm123@abv.bg</p>
+    </div>
+  </footer>
+
+  <div id="loginForm" class="modal">
+    <form class="form animate">
+      <h2><i class="fas fa-arrow-circle-right"></i> Log in here</h2>
+      <div class="closeForm" onclick="CloseForm()">&times;</div>
+      <div class="user">
+        <input type="text" placeholder="  &#xf406;   Enter Username" name="username" required>
+        <input type="password" placeholder="  &#xf084;   Enter Password"  name="password" required>
+      </div>
+      <center><label>
+        <input type="checkbox" checked="checked" name="remember"> Keep me logged in
+      </label></center>
+      <div class="btns">
+        <button type="button" onclick="Cancel()" class="cancelbtn">Cancel</button>
+        <button type="submit">Log In <i class="fas fa-arrow-circle-right"></i></button>
+      </div>
+        <div class="passwordReset">Forgot <a href="#">password</a>?</span>
+    </form>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

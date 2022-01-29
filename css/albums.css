@@ -1,0 +1,242 @@
+@keyframes border1 {
+  from{
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-top-color: #aad400;;
+  }
+  50%{
+    width: 100%;
+    height: 0;
+    border-right-color: #aad400;;
+    border-top-color: #aad400;;
+  }
+  to{
+    height: 100%;
+    width: 100%;
+    border-right-color: #aad400;;
+    border-top-color: #aad400;;
+  }
+}
+@keyframes border2 {
+  from{
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-left-color: #aad400;;
+  }
+  50%{
+    height:100%;
+    width: 0;
+    border-left-color: #aad400;;
+    border-bottom-color: #aad400;;
+  }
+  to{
+    height: 100%;
+    width: 100%;
+    border-left-color: #aad400;;
+    border-bottom-color: #aad400;;
+  }
+}
+@keyframes text {
+  from{
+    font-size: 15px;
+  }
+  to{
+    font-size: 24px;
+  }
+}
+*{
+  font-family: cursive;
+}
+.row{
+    color:#aad400;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cnt{
+  width: 25%;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.songimg1{
+  background-image: url(../image/img1.png);
+  background-size: cover;
+  width: 80%;
+  height:300px;
+}
+.songimg2{
+  background-image: url(../image/img2.png);
+  background-size: cover;
+  width: 80%;
+  height:300px;
+}
+.songimg3{
+  background-image: url(../image/img3.png);
+  background-size: cover;
+  width: 80%;
+  height:300px;
+}
+.songimg4{
+  background-image: url(../image/img4.png);
+  background-size: cover;
+  width: 80%;
+  height:300px;
+}
+.songimg5{
+  background-image: url(../image/img5.png);
+  background-size: cover;
+  width: 80%;
+  height:300px;
+}
+.songimg6{
+  background-image: url(../image/img6.png);
+  background-size: cover;
+  width: 80%;
+  height:300px;
+}
+h4{
+  text-align: center;
+  color:#aad400;
+  font-size: 40px;
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-direction: column;
+}
+.anim{
+  position: relative;
+  width: 100%;
+}
+.anim::before{
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 3;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+.anim::after{
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 3;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+.play:hover{
+  animation: text 2s linear forwards;
+}
+.play:hover .anim::before{
+  animation: border1 2s linear;
+  animation-fill-mode: forwards;
+}
+.play:hover .anim::after{
+  animation: border2 2s linear;
+  animation-fill-mode: forwards;
+}
+center hr{
+  margin: 15px auto;
+}
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.spaced{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.albumImg1{
+  background-image: url(../image/day69.png);
+  width: 50%;
+  background-size: cover;
+}
+.albumImg2{
+  background-image: url(../image/stokeley.png);
+  width: 50%;
+  background-size: cover;
+}
+.albumImg3{
+  background-image: url(../image/pimp.png);
+  width: 50%;
+  background-size: cover;
+}
+.albumImg4{
+  background-image: url(../image/testing.png);
+  width: 50%;
+  background-size: cover;
+}
+.albumImg5{
+  background-image: url(../image/kod.png);
+  width: 50%;
+  background-size: cover;
+}
+.albumImg6{
+  background-image: url(../image/ta13oo.png);
+  width: 50%;
+  background-size: cover;
+}
+.album{
+  width: 40%;
+  position: relative;
+  padding:1%;
+  display: flex;
+  justify-content: space-between;
+}
+.album::before{
+  content: '';
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  border-left: 2px solid #aad400;
+  border-bottom: 2px solid #aad400;
+}
+a{
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+p{
+  font-size: 1.1vw;
+}
+h2{
+  font-size: 1.6vw;
+}
+.albumInfo{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  color: #aad400;
+  width: 48%;
+}
+.album::after{
+  content: '';
+  position: absolute;
+  height: 50%;
+  top: 0;
+  right: 0;
+  width: 50%;
+  border-right: 2px solid #aad400;
+  border-top: 2px solid #aad400;
+}

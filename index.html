@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/515a7e2a20.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/singers.css">
+	<link rel="icon" type="image/png" href="image/favicon-16x16.png" sizes="16x16" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <title>Home</title>
+</head>
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="list"></div>
+    </div>
+    <nav class="menu">
+      <ul class="headMenu">
+        <a class="test" href="index.html"><li>Home</li></a>
+        <a href="singers.html"><li>Singers</li></a>
+        <a href="albums.html"><li>Albums</li></a>
+        <a onclick="document.getElementById('loginForm').style.display='block'" style="width:auto;"><li>Login</li></a>
+      </ul>
+    </nav>
+    <div class="logo"></div>
+    <div class="secondLogo"></div>
+  </header>
+  <hr color="#aad400" width="100%">
+  <main>
+    <h1>THE BEST MUSIC IN <i>ONE</i> PLACE</h1>
+    <div class="musicList">
+      <div class="songCtn">
+        <div class="travis1">
+          <div class="img1"></div>
+          <div class="btnBackground">
+          <div class="songStart"  onclick="StartOrStop('music/1.ogg')">
+            <audio  id="myAudio"></audio>
+          </div>
+          <div class="songStop" onclick="StartOrStop('')">
+          </div>
+          </div>
+          <div class="txt">
+            <h1>Travis Scott</h1>
+            <hr>
+            <h2>SICKO MODE</h2>
+            <hr>
+            <p>Album: Astroworld</p>
+          </div>
+        </div>
+      </div>
+      <div class="songCtn">
+        <div class="travis2">
+          <div class="img2"></div>
+          <div class="btnBackground">
+          <div class="songStart2"  onclick="StartOrStop('music/look_at_me.ogg')">
+          </div>
+          <div class="songStop2" onclick="StartOrStop('')">
+          </div>
+          </div>
+          <div class="txt">
+            <h1>Xxxxtencation</h1>
+            <hr>
+            <h2>LOOK AT ME</h2>
+            <hr>
+            <p>Album: None</p>
+          </div>
+        </div>
+      </div>
+      <div class="songCtn">
+        <div class="travis3">
+          <div class="img3"></div>
+          <div class="btnBackground">
+          <div class="songStart3"  onclick="StartOrStop('music/2.ogg')">
+          </div>
+          <div class="songStop3" onclick="StartOrStop('')">
+          </div>
+          </div>
+          <div class="txt">
+            <h1>Famous Dex</h1>
+            <hr>
+            <h2>PICK IT UP</h2>
+            <hr>
+            <p>Album: Pick It Up</p>
+          </div>
+        </div>
+      </div>
+      <div class="songCtn">
+        <div class="travis4">
+          <div class="img4"></div>
+          <div class="btnBackground">
+          <div class="songStart4"  onclick="StartOrStop('music/life_is_gud.ogg')">
+          </div>
+          <div class="songStop4" onclick="StartOrStop('')">
+          </div>
+          </div>
+          <div class="txt">
+            <h1>Future</h1>
+            <hr>
+            <h2>LIFE IS GOOD</h2>
+            <hr>
+            <p>Album: Life Is Good</p>
+          </div>
+        </div>
+      </div>
+      <div class="songCtn">
+        <div class="travis5">
+          <div class="img5"></div>
+          <div class="btnBackground">
+          <div class="songStart5"  onclick="StartOrStop('music/5.ogg')">
+          </div>
+          <div class="songStop5" onclick="StartOrStop('')">
+          </div>
+          </div>
+          <div class="txt">
+            <h1>Juice Wrld</h1>
+            <hr>
+            <h2>LEAN WITH ME</h2>
+            <hr>
+            <p>Album: Goodbye & Good Riddance</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <hr class="hr">
+  <div class="checkOut">
+    <p>Here you can check all of the albums currently available:</p>
+    <a href="albums.html" class="albumsBtn">Albums</a>
+  </div>
+  <div class="checkOut">
+    <p>Here are the singers that we have selected so far:</p>
+    <a href="singers.html" class="albumsBtn">Singers</a>
+  </div>
+  <hr class="hr">
+  <div class="discord">
+    <h1>This is our Discord server</h1>
+    <div class="description">
+      <p>In our Discord server you can make requests, file complaints and inform us of anything in the site that you thing should be changed. It is maintained constantly and there you can find what features are being wokrked on and are planned for the site.</p>
+      <a target="blank" href="https://discord.gg/DZ98Sxe"><div  class="discordLogo"></div></a>
+    </div>
+  </div>
+  <audio  id="myAudio"></audio>
+  </main>
+  <hr color="#aad400" width="100%">
+  <footer>
+    <div class="team">
+      <h2><i class="fas fa-phone-alt"></i></h2>
+      <p>0888258547</p>
+    </div>
+    <div class="team">
+        <p>BM's team:</p>
+        <p>Hristian Kocev</p>
+        <p>Veselin Dokovski</p>
+        <p>Georgi Mucinski</p>
+        <p>Qvor Kamenov</p>
+    </div>
+    <div class="team">
+      <h2><i class="fas fa-envelope"></i></h2>
+      <p>bm123@abv.bg</p>
+    </div>
+  </footer>
+
+  <div id="loginForm" class="modal">
+    <form class="form animate">
+      <h2><i class="fas fa-arrow-circle-right"></i> Log in here</h2>
+      <div class="closeForm" onclick="CloseForm()">&times;</div>
+      <div class="user">
+        <input type="text" placeholder="  &#xf406;   Enter Username" name="username" required>
+        <input type="password" placeholder="  &#xf084;   Enter Password"  name="password" required>
+      </div>
+      <center><label>
+        <input type="checkbox" checked="checked" name="remember"> Keep me logged in
+      </label></center>
+      <div class="btns">
+        <button type="button" onclick="Cancel()" class="cancelbtn">Cancel</button>
+        <button type="submit">Log In <i class="fas fa-arrow-circle-right"></i></button>
+      </div>
+        <div class="passwordReset">Forgot <a href="#">password</a>?</span>
+    </form>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

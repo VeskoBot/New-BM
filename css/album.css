@@ -1,0 +1,282 @@
+.AlbumBox{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+.albumImg1{
+  background-image: url(../image/day69.png);
+  width: 40%;
+  background-size: cover;
+}
+.vr2{
+  height: inherit;
+  border: 2px solid #aad400;
+  border-radius: 100%;
+  transform: skewX(10deg);
+  transform: skewx(10deg);
+}
+.albumInfos{
+  width: 35%;
+  color: #aad400;
+  font-size: 1.2vw;
+}
+h2{
+  padding: 0;
+  margin: 0;
+  color: #aad400;
+}
+.tracksList{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.track{
+  width: 20%;
+  border: 2px solid #aad400;
+  display: flex;
+  justify-content: space-around;
+  color: #aad400;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: 2%;
+  padding: 0.5% 0;
+}
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+}
+.spaced{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.column{
+  width: 20%;
+}
+.sixnine1{
+  overflow:hidden;
+  position: relative;
+}
+.trackCtn{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.trackImg1{
+  width:inherit;
+  height:inherit;
+  background-image:url(../image/tekashi1.png);
+  background-size:cover;
+  position:absolute;
+  transform:scale(1);
+  transition:1s;
+  left: 0;
+}
+.sixnine1:hover .trackImg1{
+  transform:scale(1.3);
+  transition:1s;
+}
+.trackImg1::before{
+  content: '';
+  position:absolute;
+  width:inherit;
+  height:inherit;
+  transform:scaleX(0);
+  background-color:black;
+  transition:1s;
+  opacity:0.3;
+}
+.sixnine1:hover .trackImg1::before{
+  transform:scale(1);
+  transition:1s;
+  opacity:0.3;
+}
+.btnBackground{
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:50%;
+  left:25%;
+  width: 50%;
+  transform:scale(2);
+}
+.btnBackground::before{
+  content:'';
+  position:absolute;
+  width:50%;
+  padding-top: 50%;
+  background:#aad400;
+  opacity:0;
+  border-radius:100%;
+  transform:scale(1);
+  transition:1s;
+}
+.sixnine1:hover .btnBackground::before{
+  opacity:0.3;
+  transform:scale(0.5);
+  transition:1s;
+}
+.btnBackground::after{
+  content:'';
+  position:absolute;
+  width:60%;
+  padding-top: 60%;
+  background:white;
+  opacity:0;
+  border-radius:100%;
+  transform:scale(1);
+  transition:1s;
+}
+.sixnine1:hover .btnBackground::after{
+  opacity:0.3;
+  transform:scale(0.5);
+  transition:1s;
+}
+.songStart,.songStart2,.songStart3,{
+  z-index:2;
+  position: absolute;
+  opacity: 0;
+  width: 15%;
+  padding-top: 15%;
+  transform: scale(1.3);
+}
+.sixnine1:hover .songStart{
+  background-image: url(../image/sound-off.png);
+  background-size: cover;
+  opacity: 1;
+  transform: scale(1);
+}
+.songStop,.songStop2,.songStop3{
+  z-index:-2;
+  position: absolute;
+  opacity: 0;
+  width: 15%;
+  padding-top: 15%;
+}
+.sixnine1:hover .songStop{
+  background-image: url(../image/sound-on.png);
+  background-size: cover;
+}
+h2{
+  font-size: 2vw;
+}
+h3{
+  font-size: 1.3vw;
+}
+/* 2 */
+.sixnine2:hover .songStart2{
+  background-image: url(../image/sound-off.png);
+  background-size: cover;
+  opacity: 1;
+  transform: scale(1);
+}
+.sixnine2:hover .songStop2{
+  background-image: url(../image/sound-on.png);
+  background-size: cover;
+}
+.sixnine2{
+  overflow:hidden;
+  position: relative;
+}
+.trackImg2{
+  width:inherit;
+  height:inherit;
+  background-image:url(../image/tekashi2.png);
+  background-size:cover;
+  position:absolute;
+  transform:scale(1);
+  transition:1s;
+  left: 0;
+}
+.sixnine2:hover .trackImg2{
+  transform:scale(1.3);
+  transition:1s;
+}
+.trackImg2::before{
+  content: '';
+  position:absolute;
+  width:inherit;
+  height:inherit;
+  transform:scaleX(0);
+  background-color:black;
+  transition:1s;
+  opacity:0.3;
+}
+.sixnine2:hover .trackImg2::before{
+  transform:scale(1);
+  transition:1s;
+  opacity:0.3;
+}
+.sixnine2:hover .btnBackground::before{
+  opacity:0.3;
+  transform:scale(0.5);
+  transition:1s;
+}
+.sixnine2:hover .btnBackground::after{
+  opacity:0.3;
+  transform:scale(0.5);
+  transition:1s;
+}
+/* 3 */
+.sixnine3:hover .songStart3{
+  background-image: url(../image/sound-off.png);
+  background-size: cover;
+  opacity: 1;
+  transform: scale(1);
+}
+.sixnine3:hover .songStop3{
+  background-image: url(../image/sound-on.png);
+  background-size: cover;
+}
+.sixnine3{
+  overflow:hidden;
+  position: relative;
+}
+.trackImg3{
+  width:inherit;
+  height:inherit;
+  background-image:url(../image/tekashi3.png);
+  background-size:cover;
+  position:absolute;
+  transform:scale(1);
+  transition:1s;
+  left: 0;
+}
+.sixnine3:hover .trackImg3{
+  transform:scale(1.3);
+  transition:1s;
+}
+.trackImg3::before{
+  content: '';
+  position:absolute;
+  width:inherit;
+  height:inherit;
+  transform:scaleX(0);
+  background-color:black;
+  transition:1s;
+  opacity:0.3;
+}
+.sixnine3:hover .trackImg3::before{
+  transform:scale(1);
+  transition:1s;
+  opacity:0.3;
+}
+.sixnine3:hover .btnBackground::before{
+  opacity:0.3;
+  transform:scale(0.5);
+  transition:1s;
+}
+.sixnine3:hover .btnBackground::after{
+  opacity:0.3;
+  transform:scale(0.5);
+  transition:1s;
+}

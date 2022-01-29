@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: cursive;
+  margin: 0px;
+}
+body{
+  width: 100%;
+  /* background-image: url(../image/1.jpg); */
+  background-color: #333;
+}
+header{
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding-bottom: 10px;
+}
+.menu-btn{
+  width: 60px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu{
+  margin: 0;
+  width: 50%;
+  height: 60px;
+  position: absolute;
+  left: -45%;
+  opacity:0;
+  z-index: -2;
+  transition: all 0.5s ease;
+}
+.headMenu{
+  height: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.headMenu a{
+  list-style:none;
+  text-decoration: none;
+  color:#aad400;
+  border-left: 2px solid;
+  padding: 7px;
+  position: relative;
+}
+.headMenu a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  border-radius: 100%;
+}
+.headMenu a:hover::before{
+  animation: homeAnim 1s ease-in;
+  border: 2px solid #aad400;
+  animation-fill-mode: forwards;
+}
+@keyframes homeAnim {
+  from{width: 0%;left: 50%;}
+  to{width:90%;left: 5%;}
+}
+.headMenu li{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  display: inline-block;
+}
+.open .menu{
+  left:25%;
+  opacity:1;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.logo{
+  height: 60px;
+  width: 53px;
+  background-image: url(../image/BM.png);
+  background-size: cover;
+  margin:0 auto;
+  transition: all 2s ease;
+}
+.secondLogo{
+  position: absolute;
+  right: 2%;
+  opacity: 0;
+  height: 60px;
+  width: 53px;
+  background-image: url(../image/BM.png);
+  background-size: cover;
+  transition: all 0.3s ease;
+}
+.open .secondLogo{
+  opacity: 1;
+  transition: all 2s ease;
+}
+.open .logo{
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.list{
+  content: '';
+  width: 45px;
+  height: 6px;
+  background: #aad400;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+.list::before,
+.list::after{
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 6px;
+  background: #aad400;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+.list::before{
+  transform: translateY(-12px);
+}
+.list::after{
+  transform: translateY(12px);
+}
+.menu-btn.open .list{
+  transform: translateX(-50px);
+  background:transparent;
+}
+.menu-btn.open .list::before{
+  transform: translate(50px,-10px) rotate(27deg);
+}
+.menu-btn.open .list::after{
+  transform: translate(50px,10px) rotate(-27deg);
+}
+main{
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.musicList{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+.btnList{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.btnList a{
+  text-decoration:none;
+  width: 19.5%
+}
+.albumsBtn{
+  color: #aad400;
+  font-size: 1.1vw;
+  text-align: center;
+  width: 100%;
+  border: #aad400 2px solid;
+  padding: 5px 0;
+  margin:15px 0;
+  text-decoration: none;
+  padding: 0 2px;
+}
+.info{
+  width: 24.5%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+footer{
+  background-color: #222;
+  padding: 10px;
+  width: inherit;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  color: #aad400;
+}
+h1{
+  text-align: center;
+  color: #aad400;
+  margin: 15px 0;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.7);
+  padding-top: 60px;
+}
+form {
+  color:#aad400;
+  background-color: rgba(155,155,155,0.4);
+  margin: 5px auto;
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 40%;
+  backdrop-filter:blur(5px);
+  font-size: 1.2vw;
+  padding: 0 8%;
+}
+.closeForm {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.closeForm:hover,
+.closeForm:focus {
+  color: red;
+  cursor: pointer;
+}
+.animate {
+  animation: animatezoom 0.6s
+}
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+a{
+  cursor: pointer;
+}
+input[type=text],input[type=password]{
+  width: 100%;
+  margin: 5px auto;
+  font-size: 1.2vw;
+  font-family: FontAwesome;
+  backdrop-filter: blur(1.5);
+  background-color: #333;
+  color: #aad400;
+  padding: 4px 0;
+  border-radius: 10px;
+}
+.user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h2{
+  margin: 7% 0;
+  text-align: center;
+}
+input[type=checkbox]{
+  color: #333;
+}
+.btns{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btns button{
+  background-color: #aad400;
+  color:white;
+  border-radius: 5px;
+  padding: 3%;
+  border-color: #333;
+  font-size: 1.4vw;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btns button:hover{
+  transition: 0.5s;
+  background-color: #99d444;
+}
+form a{
+  color:#aad400;
+}
+input[type=checkbox]{
+  margin: 3% 0;
+}
+.passwordReset{
+  width: 100%;
+  text-align: right;
+  margin: 5% 0;
+  padding: 0;
+}
+.albumsBtn:hover{
+  animation: albmBTN 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.checkOut{
+  display: flex;
+  flex-direction: column;
+  color: #aad400;
+  align-items: center;
+  justify-content: center;
+}
+.checkOut a{
+  width: 10%;
+  margin: 2%;
+}
+.hr{
+  width: 80%;
+  border: 2px #aad400 solid;
+  border-radius:100%;
+  margin: 2% auto;
+}
+.discord{
+  margin: 0 auto;
+  width: 90%;
+  border: 2px solid #aad400;
+  background-color: #444;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.discord p{
+  width: 40%;
+  color: #aad400;
+}
+.discord h1{
+  font-size: 2.2vw;
+}
+.description{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.discordLogo{
+  width: 100%;
+  margin-bottom: 1%;
+  background-image: url(../image/discord.png);
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.description a{
+  width: 20%;
+  display: block;
+  border-radius: 100%;
+}
+@keyframes albmBTN {
+  from{
+    background-color: #333;
+    color: #aad400;
+  }
+  to{
+    background-color: #88d455;
+    color: black;
+  }
+}
